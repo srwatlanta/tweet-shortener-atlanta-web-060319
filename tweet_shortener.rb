@@ -33,6 +33,6 @@ def word_substituter (tweet)
         word = value
       end
     end
-    tweet_array.to_s
   end
+    tweet_array.to_s
 end

@@ -28,9 +28,11 @@ def word_substituter (tweet)
   tweet_array = []
   tweet_array = tweet.split(" ")
   tweet_array.each do |word|
-    if word == dictionary.keys
-      word = dictionary.values
+    dictionary.each do |key, value|
+      if word == key
+        word = value
+      end
     end
-    tweet_array.join(" ")
+    tweet_array.to_s
   end
 end
